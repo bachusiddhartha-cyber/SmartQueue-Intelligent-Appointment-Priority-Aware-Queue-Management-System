@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="description" content="SmartQueue Intelligent Appointment System">
+<meta name="keywords" content="Queue Management, SmartQueue, Hospital Queue">
+<meta name="author" content="Student Project">
+
+<title>SmartQueue</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>SmartQueue</h1>
+<p>Priority Score Based Intelligent Queue System</p>
+
+<div class="container">
+
+<h2>Register Patient</h2>
+
+<input type="text" id="name" placeholder="Enter Name">
+
+<select id="category">
+<option value="10">Normal</option>
+<option value="30">Senior Citizen</option>
+<option value="50">Emergency</option>
+</select>
+
+<button onclick="addPatient()">Add to Queue</button>
+<button onclick="callNext()">Call Next</button>
+
+<h2>Current Queue</h2>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Category Score</th>
+<th>Waiting</th>
+<th>Total Score</th>
+<th>Estimated Time</th>
+<th>Notify</th>
+</tr>
+</thead>
+
+<tbody id="queueTable"></tbody>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
